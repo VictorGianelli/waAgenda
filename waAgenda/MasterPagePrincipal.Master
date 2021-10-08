@@ -23,7 +23,7 @@
                 <Items>
                     <asp:MenuItem NavigateUrl="~/index.aspx" Text="Home" Value="Home"></asp:MenuItem>
                     <asp:MenuItem Text="Usuario" Value="Usuario" NavigateUrl="~/usuarios.aspx"></asp:MenuItem>
-                    <asp:MenuItem Text="Contato" Value="Contato"></asp:MenuItem>
+                    <asp:MenuItem Text="Contato" Value="Contato" NavigateUrl="~/Contatos.aspx"></asp:MenuItem>
                     <asp:MenuItem Text="Sair" Value="Sair"></asp:MenuItem>
                 </Items>
                 <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
