@@ -11,7 +11,7 @@ namespace waAgenda
 {
 
 
-    public partial class loguin
+    public partial class login
     {
 
         /// <summary>

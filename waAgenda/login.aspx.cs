@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 
 namespace waAgenda
 {
-    public partial class loguin : System.Web.UI.Page
+    public partial class login : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -35,8 +35,8 @@ namespace waAgenda
             SqlDataReader registro = cmd.ExecuteReader();
             if (registro.HasRows)
             {
-                HttpCookie loguin = new HttpCookie("loguin", txbEmail.Text);
-                Response.Cookies.Add(loguin);
+                HttpCookie login = new HttpCookie("login", txbEmail.Text);
+                Response.Cookies.Add(login);
                 //direcionar a pagina
                 Response.Redirect("~/index.aspx");
             }
