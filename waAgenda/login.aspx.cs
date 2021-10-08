@@ -42,7 +42,8 @@ namespace waAgenda
             }
             else
             {
-                lMsg.Text = "E-mail e/ou senha incorreto/s!";
+                Response.Write("<script> alert('E-mail e/ou senha incorreto/s!') </script>");
+                // lMsg.Text = "E-mail e/ou senha incorreto/s!";
             }
             con.Close();
         }
