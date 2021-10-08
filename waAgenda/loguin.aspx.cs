@@ -35,8 +35,10 @@ namespace waAgenda
             SqlDataReader registro = cmd.ExecuteReader();
             if (registro.HasRows)
             {
+                HttpCookie loguin = new HttpCookie("loguin", txbEmail.Text);
+                Response.Cookies.Add(loguin);
                 //direcionar a pagina
-                lMsg.Text = "Funcionou!";
+                Response.Redirect("~/index.aspx");
             }
             else
             {

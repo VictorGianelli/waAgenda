@@ -11,7 +11,10 @@ namespace waAgenda
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Request.Cookies["loguin"] == null)
+            {
+                Response.Redirect("~/loguin.aspx");
+            }
         }
     }
 }
